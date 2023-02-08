@@ -1,17 +1,80 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --page-1-color: #4682b4;
+  --page-2-color: #d2b48c;
+  --page-3-color: #008080;
+  --page-4-color: #6a5acd;
+  --animate-speed: 1s;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Page Colors */
+
+#page-1 {
+  background: var(--page-1-color);
+}
+#page-2 {
+  background: var(--page-2-color);
+}
+#page-3 {
+  background: var(--page-3-color);
+}
+#page-4 {
+  background: var(--page-4-color);
+}
+
+.page {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.page p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #f4f4f4;
+  color: #333;
 }
